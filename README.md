@@ -5,3 +5,5 @@
 - Deep focus mode
 - Optional background sound
 - Notes per session
+
+Open: https://automatewithalex.github.io/focus-timer/
