@@ -211,9 +211,47 @@
     .modalHead h3{margin:0;font-size:14px}
     .modalHead .mini{margin:0}
     .modalBody{margin-top:10px}
+.back-to-hub{
+  position: fixed;
+  top: 14px;
+  left: 14px;
+  z-index: 1000;
+
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text, #e8eef6);
+
+  padding: 8px 12px;
+  border-radius: 999px;
+
+  border: 1px solid rgba(255,255,255,.18);
+  background: rgba(255,255,255,.06);
+  backdrop-filter: blur(8px);
+
+  opacity: .75;
+  transition: opacity .15s ease, transform .15s ease;
+}
+
+.back-to-hub:hover{
+  opacity: 1;
+  transform: translateY(-1px);
+}
+
+[data-theme="light"] .back-to-hub{
+  color: #111827;
+  border: 1px solid rgba(0,0,0,.15);
+  background: rgba(0,0,0,.05);
+}
+
   </style>
 </head>
 <body>
+<a href="https://automatewithalex.github.io/mini-pages/"
+   class="back-to-hub"
+   title="Back to Mini Pages">
+  ← Mini Pages
+</a>
   <div class="themeToggle" aria-label="Theme toggle">
     <button id="themeDark" class="active" title="Dark theme" aria-label="Dark theme">🌙</button>
     <button id="themeLight" title="Light theme" aria-label="Light theme">☀️</button>
