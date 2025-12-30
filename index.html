@@ -234,14 +234,21 @@
   	border: 1px solid rgba(0,0,0,.15);
   	background: rgba(0,0,0,.05);
     }
+    .topRight{
+      position:fixed; top:14px; right:14px; z-index:20;
+      display:flex; gap:10px; align-items:center;
+    }
   </style>
 </head>
 <body>
+ <div class="topRight">
+    <a href="https://automatewithalex.github.io/mini-pages/" class="back-to-hub" title="Back to Mini Pages">← Mini Pages</a>
   <div class="themeToggle" aria-label="Theme toggle">
     <button id="themeDark" class="active" title="Dark theme" aria-label="Dark theme">🌙</button>
     <button id="themeLight" title="Light theme" aria-label="Light theme">☀️</button>
   </div>
-    <a href="https://automatewithalex.github.io/mini-pages/" class="back-to-hub" title="Back to Mini Pages">← Mini Pages</a>
+</div>
+
   <button class="fsToggle" id="fsToggle" title="Distraction-free (F) / Exit (Esc)" aria-label="Fullscreen toggle">⛶</button>
 
   <div class="wrap">
